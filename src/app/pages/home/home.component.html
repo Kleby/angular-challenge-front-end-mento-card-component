@@ -1,1 +1,12 @@
-<app-card></app-card>
+<div class="container__home">
+    <app-card 
+        *ngFor="let data of dataCards; let isFirst  = first; let isLast= last;"
+        [isLast]="isLast"
+        [isFirst]="isFirst"
+        [title]="data.title"
+        [cardIcon]="data.cardIcon"
+        [description]="data.description"
+        [colorCard]="data.colorCard"
+    >
+</app-card>
+</div>

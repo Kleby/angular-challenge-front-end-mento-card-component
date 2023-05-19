@@ -1,16 +1,24 @@
-<div class="container__card">
+<div 
+    class="container__card"
+    [style.background-color]="colorCard"
+    [ngClass]="{'first-item': isFirst, 'last-item': isLast}"
+> 
     <div class="card-icon">
-        <img src="../../../assets/images/icon-sedans.svg" alt="Sedans">
+        <img [src]="cardIcon" alt={{title}} />
     </div>
     <div class="card-title">
-        SEDANS
+        <h1>{{title}}</h1>
     </div>
     <div class="card-description">
-        Choose a sedan for its affordability and excellent fuel economy. Ideal
-        for cruising in the city or on you next road trip.
+        <p>
+            {{description}}
+        </p>
     </div>
     <div class="btn-card">
-        <button>
+        <button 
+            class="btn-btn"
+            [style.color]="colorCard"
+        >
             Learn More
         </button>
     </div>

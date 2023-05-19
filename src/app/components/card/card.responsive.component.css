@@ -1,0 +1,8 @@
+@media (min-width: 376px){
+   .first-item{
+    border-radius: 0.625rem 0 0 0.625rem;
+   }
+   .last-item{
+    border-radius: 0 0.9259vh 0.9259vh 0;
+   }
+}

@@ -1,0 +1,8 @@
+.container__home{
+    display: flex;
+    flex-direction: column;
+    padding: 3.5vh 2.23vh;
+    margin: 0 auto;
+    width: 90vw;
+    height: 90vh;
+}
